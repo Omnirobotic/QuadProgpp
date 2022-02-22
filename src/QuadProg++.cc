@@ -268,6 +268,7 @@ l2: /* Step 2: check for feasibility and determine a new S-pair */
         ip = i;
       }
     }
+  printf("ss: ", ss);
   if (ss >= epsilon)
   {
     return f_value;
