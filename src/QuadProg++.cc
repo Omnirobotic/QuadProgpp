@@ -696,7 +696,7 @@ void cholesky_decomposition(Matrix<double>& A)
           std::ostringstream os;
           // raise error
           print_matrix("A", A);
-          os << "Error in cholesky decomposition, sum: " << sum;
+          os << "changed: Error in cholesky decomposition, sum: " << sum;
           throw std::logic_error(os.str());
           exit(-1);
         }
