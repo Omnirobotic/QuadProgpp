@@ -54,6 +54,7 @@ double solve_quadprog(Matrix<double>& G, Vector<double>& g0,
                       const Matrix<double>& CI, const Vector<double>& ci0,
                       Vector<double>& x)
 {
+  std::cout << "in solve_quadprog" << std::endl;
   std::ostringstream msg;
   unsigned int n = G.ncols(), p = CE.ncols(), m = CI.ncols();
   if (G.nrows() != n)
